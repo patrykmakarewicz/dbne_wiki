@@ -1,0 +1,51 @@
+html, body{
+  height: 100%;
+  font-size: 25px;
+  color: white;
+}
+
+#root{
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #21233d;
+}
+
+.Content{
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+.Menu{
+  height: 100%;
+  width: 16%;
+  float: left;
+  position: fixed;
+}
+
+.LastEvents{
+  background-color: gray;
+  height: 70%;
+  width: 16%;
+  right: 0px;
+  position: fixed;
+}
+
+.Header{
+  background-color: orange;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 50px;
+}
+
+.Search{
+  height: 20px;
+  width: 200px;
+  background-color: darkorange;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
