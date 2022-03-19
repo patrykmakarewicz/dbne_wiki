@@ -18,29 +18,18 @@
           transform: translateY(-50%);
 }
 
-body
-{
-  background:#333;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-
-h1, h2 {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  font-weight: normal;
-}
-
-h2 {
-  font-size: 14px;
-  margin-bottom: 30px;
-  color: #24E2B8;
-}
-
-.one, .two, .three, .four, .five, .six, .seven {
-  border: none;
+.menu-button {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald";
+  position: relative;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+    0px 0px 10px 0px #02d6fc;
+  max-width: 200px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 400px 200px;
   border-radius: 4px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
   overflow: hidden;
@@ -51,37 +40,9 @@ h2 {
   color: white;
   outline: none;
   cursor: pointer;
-  width: 100%;
-  -webkit-transition: background-position .7s,box-shadow .4s;
-  transition: background-position .7s,box-shadow .4s;
-  background-size: 110%;
-  font-family: 'Oswald', sans-serif;
-}
-.one:hover, .three:hover, .four:hover, .seven:hover {
-  background-position: 0% 30%;
 }
 
-.two:hover{
-    background-position: 0% 20%;
-}
-
-.five:hover, .six:hover{
-    background-position: 0% 60%;
-}
-
-.one:hover:after, .two:hover:after, .three:hover:after, .four:hover:after, .five:hover:after, .six:hover:after, .seven:hover:after {
-  right: -40px;
-  -webkit-transition: right .4s,-webkit-transform 30s .2s linear;
-  transition: right .4s,-webkit-transform 30s .2s linear;
-  transition: right .4s,transform 30s .2s linear;
-  transition: right .4s,transform 30s .2s linear,-webkit-transform 30s .2s linear;
-}
-.one:before, .two:before, .three:before, .four:before, .five:before,.six:before, .seven:before, .one:after, .two:after, .three:after, .four:after, .five:after, .six:after, .seven:after {
-  font-family: FontAwesome;
-  display: block;
-  position: absolute;
-}
-.one:before, .two:before, .three:before, .four:before, .five:before, .six:before, .seven:before {
+.menu-button:before{
   -webkit-transition: all 1s;
   transition: all 1s;
   font-size: 30px;
@@ -89,7 +50,23 @@ h2 {
   top: 19px;
 }
 
-.one:after, .two:after, .three:after, .four:after, .five:after, .six:after, .seven:after {
+.menu-button:hover {
+}
+
+.menu-button:hover:after {
+  right: -40px;
+  -webkit-transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear,-webkit-transform 30s .2s linear;
+}
+.menu-button:before, .menu-button:after {
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+
+.menu-button:after {
   -webkit-transition: right .4s, -webkit-transform .2s;
   transition: right .4s, -webkit-transform .2s;
   transition: right .4s, transform .2s;
@@ -100,263 +77,13 @@ h2 {
   top: -17px;
 }
 
-.one {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #782CDA;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#782CDA), to(rgba(126, 94, 162, 0.51))), url("https://downloadwap.com/thumbs2/wallpapers/p2ls/new/43/JqKGVfP6.jpg");
-  background-image: linear-gradient(to bottom, #782CDA, rgba(126, 94, 162, 0.51)), url("https://downloadwap.com/thumbs2/wallpapers/p2ls/new/43/JqKGVfP6.jpg");
-  background-position: 0% 60%;
-}
-.one:hover {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #782CDA;
-}
-.one:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-          right: 0px;
-}
-.one:hover:before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.one:after, .one:before {
-  /*content: "";*/
-  content: url("./images/one-icon.png");
-  opacity: 0.8;
-}
-.one:after{
-  transform: scale(3.5);
-  right: -65px;
-  opacity: 0.3;
-}
-.one b {
-  color: #DDA6FF;
-  font-weight: 700;
+.icon {
+  display: block;
+  margin-right: 40px;
 }
 
-.two {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #E48A3C;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#E48A3C), to(rgba(222, 135, 61, 0.24))), url("http://www.dystryktzero.pl/images/detailed/61/1100x620-db.jpg");
-  background-image: linear-gradient(to bottom, #E48A3C, rgba(222, 135, 61, 0.24)), url("http://www.dystryktzero.pl/images/detailed/61/1100x620-db.jpg");
-  background-position: 0% 50%;
-}
-.two:hover {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #E48A3C;
-}
-.two:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-          right: 0px;
-          top: -70px;
-}
 
-.two:hover:before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.two:after, .two:before {
-  /*content: "";*/
-  content :url("./images/two-icon.png");
-  opacity: 0.8;
-}
 
-.two:after{
-  transform: scale(3);
-  right: -75px;
-  opacity: 0.3;
-  top: -70px;
-}
 
-.two b {
-  color: #FFD9B4;
-  font-weight: 700;
-}
 
-.three {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #36C176;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#36C176), to(rgba(86, 202, 139, 0.18))), url("https://lh3.googleusercontent.com/vX6ACHR444RGdjjThoGrz4oYixXsWQ3qn9Lcg-IdnIGj35bKQJXJhWo5xxsDNwEkbLDDL4n1pwzi3aKpjurUfZTkTQ=w640-h400-e365-rj-sc0x00ffffff");
-  background-image: linear-gradient(to bottom, #36C176, rgba(86, 202, 139, 0.18)), url("https://lh3.googleusercontent.com/vX6ACHR444RGdjjThoGrz4oYixXsWQ3qn9Lcg-IdnIGj35bKQJXJhWo5xxsDNwEkbLDDL4n1pwzi3aKpjurUfZTkTQ=w640-h400-e365-rj-sc0x00ffffff");
-}
-.three:hover {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #36C176;
-}
-.three:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-          right: 0px;
-          top: -55px;
-}
-.three:hover:before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.three:after, .three:before {
-  /*content: "";*/
-  content: url("./images/three-icon.png");
-  opacity: 0.75;
-}
 
-.three:after{
-  transform: scale(3);
-  right: -75px;
-  opacity: 0.3;
-  top: -55px;
-}
-
-.three b {
-  color: #63FFAC;
-  font-weight: 700;
-}
-
-.four {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #02d6fc;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#02d6fc), to(rgba(36, 155, 155, 0.24))), url("https://static.bandainamcoent.eu/high/dragon-ball/dragon-ball-the-breakers/00-page-setup/dbtb-header-mobile.jpg");
-  background-image: linear-gradient(to bottom, #02d6fc, rgba(161, 245, 245, 0.24)), url("https://static.bandainamcoent.eu/high/dragon-ball/dragon-ball-the-breakers/00-page-setup/dbtb-header-mobile.jpg");
-}
-.four:hover {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #02d6fc;
-}
-
-.four:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-          right: 0px;
-          top: 0px;
-}
-
-.four:hover:before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.four:after, .four:before {
-  /*content: "";*/
-  content: url("./images/four-icon.png");
-  opacity: 0.7;
-  margin-left: -5px;
-}
-
-.four:after{
-  transform: scale(3);
-  right: -75px;
-  opacity: 0.3;
-  top: 0px;
-}
-
-.four b {
-  color: #1CF4FF;
-  font-weight: 700;
-}
-
-.five {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #DE3964;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#DE3964), to(rgba(154, 40, 87, 0.24))), url("https://wallpaperdash.com/wp-content/uploads/2021/04/Dragon-ball-wallpaper-phone.png");
-  background-image: linear-gradient(to bottom, #DE3964, rgba(154, 40, 87, 0.24)), url("https://wallpaperdash.com/wp-content/uploads/2021/04/Dragon-ball-wallpaper-phone.png");
-  background-position: 0% 40%;
-}
-.five:hover {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #DE3964;
-}
-.five:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.five:hover:before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.five:after, .five:before {
-  /*content: "";*/
-  content: url("./images/five-icon.png");
-  opacity: 0.6;
-}
-
-.five:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-          right: 0px;
-          top: -60px;
-}
-
-.five:after{
-  transform: scale(3);
-  right: -75px;
-  opacity: 0.3;
-  top: -60px;
-}
-
-.five b {
-  color: #F764FF;
-  font-weight: 700;
-}
-
-.six {
-    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px darkblue;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(darkblue), to(rgba(222, 135, 61, 0.24))), url("https://gamingbolt.com/wp-content/uploads/2020/01/dragon-ball-z-kakarot.jpeg");
-    background-image: linear-gradient(to bottom, darkblue, rgba(222, 135, 61, 0.24)), url("https://gamingbolt.com/wp-content/uploads/2020/01/dragon-ball-z-kakarot.jpeg");
-    background-position: 0% 20%;
-}
-  .six:hover {
-    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px darkblue;
-  }
-  .six:hover:after {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .six:hover:before {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  .six:after, .six:before {
-    /*content: "";*/
-    content: url("./images/six-icon.png");
-    opacity: 0.6;
-  }
-  .six:hover:after {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-            right: 0px;
-            top: -60px;
-  }
-  
-  .six:after{
-    transform: scale(3);
-    right: -75px;
-    opacity: 0.3;
-    top: -60px;
-  }
-
-  .seven {
-    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px rgb(139, 137, 0);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(139, 137, 0)), to(rgba(222, 135, 61, 0.24))), url("https://img.ppe.pl/upload/articles/32/88/17/328817792.jpg");
-    background-image: linear-gradient(to bottom, rgb(139, 137, 0), rgba(222, 135, 61, 0.24)), url("https://img.ppe.pl/upload/articles/32/88/17/328817792.jpg");
-}
-  .seven:hover {
-    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px rgb(139, 137, 0);
-  }
-  .seven:hover:after {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .seven:hover:before {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  .seven:after, .seven:before {
-    /*content: "";*/
-    content: url("./images/seven-icon.png");
-    float: left;
-  }
-
-  .seven:hover:after {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-            right: 0px;
-            top: -60px;
-  }
-  
-  .seven:after{
-    transform: scale(3);
-    right: -75px;
-    opacity: 0.3;
-    top: -60px;
-  }

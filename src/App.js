@@ -1,7 +1,6 @@
 import Menu from './Menu.js'
 import Header from './Header.js'
 import LastEvents from './LastEvents.js'
-
 import './App.css';
 
 function App() {
