@@ -23,8 +23,6 @@
   align-items: center;
   font-family: "Oswald";
   position: relative;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
-    0px 0px 10px 0px #02d6fc;
   max-width: 200px;
   height: 40px;
   background-repeat: no-repeat;
